@@ -432,6 +432,15 @@ PRODUCT_PACKAGES += \
     UdfpsIcons
 endif
 
+# Volume Styles
+PRODUCT_PACKAGES += \
+    VolumeDoubleLayer \
+    VolumeGradient \
+    VolumeNeumorph \
+    VolumeNeumorphOutline \
+    VolumeOutline \
+    VolumeShadedLayer
+
 # Include {Lato,Rubik} fonts
 $(call inherit-product-if-exists, external/google-fonts/lato/fonts.mk)
 $(call inherit-product-if-exists, external/google-fonts/rubik/fonts.mk)
