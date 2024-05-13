@@ -386,6 +386,27 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ScreenshotEditor
 
+ifeq ($(strip $(WITH_GMS)),false)
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := false
+endif
+
+# Lawnchair
+TARGET_PREBUILT_LAWNCHAIR_LAUNCHER ?= true
+ifeq ($(strip $(TARGET_PREBUILT_LAWNCHAIR_LAUNCHER)),true)
+PRODUCT_PACKAGES += \
+    Lawnchair \
+    LawnchairOverlay \
+    Lawnicons
+
+# Lawnchair Launcher
+PRODUCT_SYSTEM_PROPERTIES += \
+    persist.sys.quickswitch_lawnchair_shipped=1
+else
+# Lawnchair Launcher
+PRODUCT_SYSTEM_PROPERTIES += \
+    persist.sys.quickswitch_lawnchair_shipped=0
+endif
+
 # Include {Lato,Rubik} fonts
 $(call inherit-product-if-exists, external/google-fonts/lato/fonts.mk)
 $(call inherit-product-if-exists, external/google-fonts/rubik/fonts.mk)
