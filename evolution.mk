@@ -170,6 +170,11 @@ PRODUCT_PACKAGES += \
     IconPackKaiThemePickerOverlay \
     IconPackLornAndroidOverlay \
     IconPackLornSystemUIOverlay \
+    IconPackNostalgicAndroidOverlay \
+    IconPackNostalgicLauncherOverlay \
+    IconPackNostalgicSettingsOverlay \
+    IconPackNostalgicSystemUIOverlay \
+    IconPackNostalgicThemePickerOverlay \
     IconPackOOSAndroidOverlay \
     IconPackOOSLauncherOverlay \
     IconPackOOSSettingsOverlay \
