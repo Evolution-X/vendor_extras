@@ -209,6 +209,14 @@
         </font>
     </family>
 
+    <!-- Nothing -->
+    <family customizationType="new-named-family" name="subway">
+        <font weight="300" style="normal">subway.ttf</font>
+    </family>
+    <family customizationType="new-named-family" name="ntype82">
+        <font weight="300" style="normal">ntype82.ttf</font>
+    </family>
+
     <!-- IOS -->
     <family customizationType="new-named-family" name="ios">
         <font weight="300" style="normal">ios.ttf</font>
