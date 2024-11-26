@@ -114,6 +114,7 @@ PRODUCT_PACKAGES += \
     ClockFontSlimOverlay \
     ClockFontNtype82Overlay \
     ClockFontSubwayOverlay \
+    ClockFontMotorola \
     FontAccuratistOverlay \
     FontAclonicaOverlay \
     FontAmaranteOverlay \
