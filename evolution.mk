@@ -396,8 +396,8 @@ PRODUCT_PACKAGES += \
 # Udfps
 ifeq ($(TARGET_HAS_UDFPS),true)
 PRODUCT_PACKAGES += \
-    UdfpsAnimations \
-    UdfpsIcons
+    UdfpsAnimations
+    # UdfpsIcons
 endif
 
 # Include {Lato,Rubik} fonts
