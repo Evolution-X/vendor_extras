@@ -15,7 +15,8 @@
 //
 
 runtime_resource_overlay {
-    name: "NavBarGesturalNarrowSpaceOverlay",
-    theme: "NavBarGesturalNarrowSpaceOverlay",
+    name: "LineageNavigationBarNarrowSpace",
+
+    theme: "LineageNavigationBarNarrowSpace",
     product_specific: true,
 }
