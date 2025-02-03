@@ -417,6 +417,10 @@ PRODUCT_PACKAGES += \
     PowerIOS \
     PowerLayers
 
+# BetterQS
+PRODUCT_PACKAGES += \
+    BetterQS
+
 # Themes
 PRODUCT_PACKAGES += \
     AndroidBlackThemeOverlay
