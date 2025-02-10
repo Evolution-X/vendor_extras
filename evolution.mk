@@ -432,6 +432,12 @@ PRODUCT_PACKAGES += \
     UdfpsIcons
 endif
 
+# Utility Overlays
+PRODUCT_PACKAGES += \
+    HideSmartSpace \
+    SmartSpaceOffset \
+    HideClock
+
 # Volume Styles
 PRODUCT_PACKAGES += \
     VolumeDoubleLayer \
