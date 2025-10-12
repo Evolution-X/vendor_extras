@@ -386,7 +386,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ScreenshotEditor
 
-ifeq ($(strip $(WITH_GMS)),false)
+ifeq ($(strip $(WITH_GMS)),true)
 TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := false
 endif
 
@@ -402,7 +402,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_SYSTEM_PROPERTIES += \
     persist.sys.quickswitch_lawnchair_shipped=1
 else
-# Lawnchair Launcher
 PRODUCT_SYSTEM_PROPERTIES += \
     persist.sys.quickswitch_lawnchair_shipped=0
 endif
