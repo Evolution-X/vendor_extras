@@ -72,26 +72,17 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     IconShapeArchOverlay \
     IconShapeCloudyOverlay \
-    IconShapeCylinderOverlay \
     IconShapeFlowerOverlay \
     IconShapeFourSidedCookieOverlay \
     IconShapeHeartOverlay \
-    IconShapeHexagonOverlay \
     IconShapeIosOverlay \
     IconShapeLeafOverlay \
     IconShapeMeowOverlay \
-    IconShapePebbleOverlay \
     IconShapeRoundedHexagonOverlay \
-    IconShapeRoundedRectOverlay \
     IconShapeSamsungOverlay \
     IconShapeScrollOverlay \
     IconShapeSevenSidedCookieOverlay \
-    IconShapeStretchedOverlay \
-    IconShapeSquareOverlay \
-    IconShapeSquircleOverlay \
-    IconShapeTaperedRectOverlay \
-    IconShapeTeardropOverlay \
-    IconShapeVesselOverlay
+    IconShapeStretchedOverlay
 
 # Navbar styles
 ifeq ($(WITH_GMS),true)
