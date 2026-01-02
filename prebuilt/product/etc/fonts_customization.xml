@@ -140,6 +140,9 @@
     </family>
   </family-list>
 
+    <alias name="google-sans-flex-medium" to="google-sans-flex" weight="500"/>
+    <alias name="google-sans-flex-bold" to="google-sans-flex" weight="700"/>
+
   <!--  baseline -->
   <!--  display -->
   <family customizationType="new-named-family" name="variable-display-large">
