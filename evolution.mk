@@ -2,6 +2,7 @@
 # Copyright (C) 2018 The LineageOS Project
 #               2017-2024 crDroid Android Project
 #
+# SPDX-FileCopyrightText: Evolution X
 # SPDX-License-Identifier: Apache-2.0
 #
 
@@ -25,8 +26,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     HideSmartSpace \
-    SmartSpaceOffset \
-    HideClock
+    SmartSpaceOffset
 
 # Fonts
 PRODUCT_PACKAGES += \
