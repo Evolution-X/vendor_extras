@@ -98,7 +98,11 @@ class AxWindowBlurController @JvmOverloads constructor(
 
     private fun apply(settings: AxBackdropBlurSettingsModel) {
         val radius = settings.blurRadiusPx.roundToInt()
-        val supportedRadius = if (AxBlurSupport.supportsCrossWindowBlur()) radius else 0
+        val supportedRadius = if (AxBlurSupport.supportsCrossWindowBlur() && !AxBlurProperties.disableBlur) {
+            radius
+        } else {
+            0
+        }
         val alpha = if (supportedRadius > 0) surfaceAlpha.sanitizedAlpha() else 255
         clearWindowBlur()
         applyWindowBlur(supportedRadius)
