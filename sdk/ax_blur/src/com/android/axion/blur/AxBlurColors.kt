@@ -35,6 +35,7 @@ object AxBlurColors {
 
     @JvmStatic
     fun surfaceEffect(context: Context, level: Int): Int {
+        if (isBlurDisabled) return surfaceContainer(context)
         return color(context, surfaceEffectResource(level))
     }
 
@@ -65,11 +66,19 @@ object AxBlurColors {
 
     @JvmStatic
     fun surfaceBrightTint(context: Context): Int {
+        if (isBlurDisabled) return surfaceBright(context)
         return color(context, R.color.ax_blur_surface_bright_expressive_tint)
     }
 
     @JvmStatic
+    fun surfaceLightTint(context: Context): Int {
+        if (isBlurDisabled) return surfaceBright(context)
+        return color(context, R.color.ax_blur_surface_light_expressive_tint)
+    }
+
+    @JvmStatic
     fun surfaceBrightTintList(context: Context): ColorStateList {
+        if (isBlurDisabled) return ColorStateList.valueOf(surfaceBright(context))
         return colorStateList(context, R.color.ax_blur_surface_bright_expressive_tint)
     }
 
@@ -80,11 +89,13 @@ object AxBlurColors {
 
     @JvmStatic
     fun surfaceContainerTint(context: Context): Int {
+        if (isBlurDisabled) return surfaceContainer(context)
         return color(context, R.color.ax_blur_surface_container_expressive_tint)
     }
 
     @JvmStatic
     fun surfaceContainerTintList(context: Context): ColorStateList {
+        if (isBlurDisabled) return ColorStateList.valueOf(surfaceContainer(context))
         return colorStateList(context, R.color.ax_blur_surface_container_expressive_tint)
     }
 
@@ -117,6 +128,9 @@ object AxBlurColors {
             cornerRadius = dialogCornerRadius(context)
         }
     }
+
+    private val isBlurDisabled: Boolean
+        get() = AxBlurProperties.disableBlur || !AxBlurProperties.defaultGlobalBlurEnabled
 
     private fun surfaceEffectResource(level: Int): Int {
         return when (level) {

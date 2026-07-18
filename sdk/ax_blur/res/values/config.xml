@@ -16,4 +16,5 @@
 -->
 <resources>
     <item name="config_axBlurSurfaceAlpha" format="float" type="dimen">0.64</item>
+    <item name="config_axBlurSurfaceAlphaBright" format="float" type="dimen">0.54</item>
 </resources>
