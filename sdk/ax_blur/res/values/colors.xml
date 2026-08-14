@@ -2,10 +2,10 @@
 <resources
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:androidprv="http://schemas.android.com/apk/prv/res/android">
-    <color name="ax_blur_surface_effect_0">@androidprv:color/surface_effect_0</color>
-    <color name="ax_blur_surface_effect_1">@androidprv:color/surface_effect_1</color>
-    <color name="ax_blur_surface_effect_2">@androidprv:color/surface_effect_2</color>
-    <color name="ax_blur_surface_effect_3">@androidprv:color/surface_effect_3</color>
+    <color name="ax_blur_surface_effect_0">@androidprv:color/system_surface_effect_0_light</color>
+    <color name="ax_blur_surface_effect_1">@androidprv:color/system_surface_effect_1_light</color>
+    <color name="ax_blur_surface_effect_2">@androidprv:color/system_surface_effect_2_light</color>
+    <color name="ax_blur_surface_effect_3">@androidprv:color/system_surface_effect_3_light</color>
     <color name="ax_blur_fallback">@androidprv:color/materialColorSurfaceContainer</color>
     <color name="ax_blur_surface_bright_expressive">@android:color/system_accent2_50</color>
     <color name="ax_blur_surface_container_expressive">@android:color/system_accent2_100</color>
