@@ -24,6 +24,11 @@ PRODUCT_PACKAGES += \
     SystemUIClocks-NumOverlap \
     SystemUIClocks-Weather
 
+ifeq ($(WITH_GMS),false)
+PRODUCT_PACKAGES += \
+    Launcher3NoGestureHintOverlay
+endif
+
 PRODUCT_PACKAGES += \
     HideSmartSpace \
     SmartSpaceOffset
