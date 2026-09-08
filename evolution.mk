@@ -31,6 +31,7 @@ endif
 
 PRODUCT_PACKAGES += \
     HideSmartSpace \
+    ImeNavBarSpaceOverlay \
     SmartSpaceOffset
 
 # Fonts
