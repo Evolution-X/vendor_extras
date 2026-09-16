@@ -15,6 +15,10 @@
  */
 package com.android.axion.blur.model
 
+import com.android.axion.blur.AxBlurConfig
+import kotlin.jvm.JvmOverloads
+import kotlin.jvm.JvmStatic
+
 data class AxBackdropBlurSettingsSpec internal constructor(
     internal val enabledKey: String?,
     internal val radiusKey: String,
@@ -23,14 +27,13 @@ data class AxBackdropBlurSettingsSpec internal constructor(
     internal val maxRadiusPx: Float?,
 ) {
     companion object {
-        private const val KEY_SYSTEM_BLUR_RADIUS = "system_blur_radius"
-        private const val KEY_LAUNCHER_BLUR_ENABLED = "pulse_launcher_blur_enabled"
-        private const val KEY_LAUNCHER_BLUR_RADIUS = "pulse_launcher_blur_radius"
-        private const val DEFAULT_LAUNCHER_BLUR_RADIUS_PX = 34f
-        private const val MAX_LAUNCHER_BLUR_RADIUS_PX = 100f
+        private const val KEY_SYSTEM_BLUR_RADIUS_PCT = AxBlurConfig.KEY_SYSTEM_BLUR_RADIUS_PCT
+        private const val KEY_LAUNCHER_BLUR_ENABLED = AxBlurConfig.KEY_LAUNCHER_BLUR_ENABLED
+        private const val KEY_LAUNCHER_BLUR_RADIUS_PCT = AxBlurConfig.KEY_LAUNCHER_BLUR_RADIUS_PCT
+        private const val MAX_LAUNCHER_BLUR_RADIUS_PX = AxBlurConfig.BASE_MAX_BLUR_RADIUS_PX
         private val SYSTEM = AxBackdropBlurSettingsSpec(
             enabledKey = null,
-            radiusKey = KEY_SYSTEM_BLUR_RADIUS,
+            radiusKey = KEY_SYSTEM_BLUR_RADIUS_PCT,
             defaultEnabled = true,
             defaultRadiusPx = null,
             maxRadiusPx = null,
@@ -44,12 +47,12 @@ data class AxBackdropBlurSettingsSpec internal constructor(
         @JvmStatic
         @JvmOverloads
         fun launcher(
-            defaultRadiusPx: Float = DEFAULT_LAUNCHER_BLUR_RADIUS_PX,
+            defaultRadiusPx: Float = MAX_LAUNCHER_BLUR_RADIUS_PX,
             maxRadiusPx: Float = MAX_LAUNCHER_BLUR_RADIUS_PX,
         ): AxBackdropBlurSettingsSpec {
             return secure(
                 enabledKey = KEY_LAUNCHER_BLUR_ENABLED,
-                radiusKey = KEY_LAUNCHER_BLUR_RADIUS,
+                radiusKey = KEY_LAUNCHER_BLUR_RADIUS_PCT,
                 defaultEnabled = false,
                 defaultRadiusPx = defaultRadiusPx,
                 maxRadiusPx = maxRadiusPx,

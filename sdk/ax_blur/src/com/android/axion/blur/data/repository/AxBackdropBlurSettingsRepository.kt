@@ -20,8 +20,8 @@ import android.os.Handler
 import android.os.Looper
 import android.os.UserHandle
 import android.provider.Settings
+import com.android.axion.blur.AxBlurConfig
 import com.android.axion.blur.AxBlurProperties
-import com.android.axion.blur.R
 import com.android.axion.blur.model.AxBackdropBlurSettingsSpec
 import com.android.axion.blur.model.AxBackdropBlurSettingsSubscription
 import com.android.axion.kotlin.settings.SettingsFlow
@@ -109,7 +109,7 @@ internal class AxBackdropBlurSettingsRepository(
 
     companion object {
         fun maxBlurRadiusPx(context: Context): Float {
-            return context.resources.getDimension(R.dimen.ax_backdrop_blur_radius)
+            return AxBlurConfig.getMaxBlurRadiusPx(context)
         }
 
         private fun currentUserId(): Int {
