@@ -14,6 +14,8 @@
  * limitations under the License.
  */
 
+@file:OptIn(ExperimentalMaterial3ExpressiveApi::class)
+
 package com.android.axion.compose.preferences
 
 import androidx.compose.animation.AnimatedVisibility
@@ -93,13 +95,13 @@ fun PreferenceGroup(
             if (collapsible) {
                 val titleShape = if (expanded) {
                     RoundedCornerShape(
-                        topStart = 28.dp,
-                        topEnd = 28.dp,
-                        bottomStart = 4.dp,
-                        bottomEnd = 4.dp,
+                        topStart = PreferenceTokens.CornerRadiusOuter,
+                        topEnd = PreferenceTokens.CornerRadiusOuter,
+                        bottomStart = PreferenceTokens.CornerRadiusInner,
+                        bottomEnd = PreferenceTokens.CornerRadiusInner,
                     )
                 } else {
-                    RoundedCornerShape(28.dp)
+                    RoundedCornerShape(PreferenceTokens.CornerRadiusOuter)
                 }
                 Row(
                     modifier = Modifier
@@ -108,7 +110,12 @@ fun PreferenceGroup(
                         .clip(titleShape)
                         .background(MaterialTheme.colorScheme.surfaceBright)
                         .clickable { expanded = !expanded }
-                        .padding(start = 16.dp, end = 16.dp, top = 14.dp, bottom = 14.dp),
+                        .padding(
+                            start = PreferenceTokens.PaddingHorizontal,
+                            end = PreferenceTokens.PaddingHorizontal,
+                            top = 14.dp,
+                            bottom = 14.dp,
+                        ),
                     verticalAlignment = Alignment.CenterVertically,
                 ) {
                     Text(
@@ -140,7 +147,11 @@ fun PreferenceGroup(
                     color = MaterialTheme.colorScheme.primary,
                     modifier = Modifier
                         .fillMaxWidth()
-                        .padding(start = 16.dp, bottom = 8.dp, top = 16.dp)
+                        .padding(
+                            start = PreferenceTokens.CategoryPaddingStart,
+                            bottom = PreferenceTokens.CategoryPaddingBottom,
+                            top = PreferenceTokens.CategoryPaddingTop,
+                        )
                 )
             }
         }

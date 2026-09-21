@@ -66,33 +66,30 @@ fun <T> DraggablePreferenceGroup(
     contentBeforeItems: PreferenceGroupScope.() -> Unit = {},
 ) {
     val density = LocalDensity.current
-    val compactStepPx = remember(density) { with(density) { 61.dp.toPx() } }
-    val expandedStepPx = remember(density) { with(density) { 73.dp.toPx() } }
+    val stepPx = remember(density) { with(density) { PreferenceTokens.DraggableStep.toPx() } }
     var draggedKey by remember { mutableStateOf<Any?>(null) }
     var draggedIndex by remember { mutableIntStateOf(-1) }
     var dragOffset by remember { mutableFloatStateOf(0f) }
-    var dragStepPx by remember { mutableFloatStateOf(expandedStepPx) }
-    val targetIndex = dragTargetIndex(draggedIndex, dragOffset, items.size, dragStepPx)
+    val targetIndex = dragTargetIndex(draggedIndex, dragOffset, items.size, stepPx)
 
-    fun startDrag(key: Any, index: Int, hasSummary: Boolean) {
+    fun startDrag(key: Any, index: Int) {
         draggedKey = key
         draggedIndex = index
         dragOffset = 0f
-        dragStepPx = if (hasSummary) expandedStepPx else compactStepPx
     }
 
     fun updateDragOffset(dragAmount: Float) {
         if (draggedIndex == -1) {
             return
         }
-        val minOffset = -draggedIndex * dragStepPx
-        val maxOffset = (items.size - draggedIndex - 1).coerceAtLeast(0) * dragStepPx
+        val minOffset = -draggedIndex * stepPx
+        val maxOffset = (items.size - draggedIndex - 1).coerceAtLeast(0) * stepPx
         dragOffset = (dragOffset + dragAmount).coerceIn(minOffset, maxOffset)
     }
 
     fun commitDrag() {
         val fromIndex = draggedIndex
-        val toIndex = dragTargetIndex(fromIndex, dragOffset, items.size, dragStepPx)
+        val toIndex = dragTargetIndex(fromIndex, dragOffset, items.size, stepPx)
         draggedKey = null
         draggedIndex = -1
         dragOffset = 0f
@@ -107,7 +104,7 @@ fun <T> DraggablePreferenceGroup(
             val key = itemKey(value)
             val summary = itemSummary(value)
             val isDragging = draggedKey == key
-            val displacedOffset = displacedOffset(index, draggedIndex, targetIndex, dragStepPx)
+            val displacedOffset = displacedOffset(index, draggedIndex, targetIndex, stepPx)
             item {
                 key(key) {
                     DraggablePreference(
@@ -120,7 +117,7 @@ fun <T> DraggablePreferenceGroup(
                         displacedOffset = if (isDragging) 0f else displacedOffset,
                         isAnyDragging = draggedKey != null,
                         dragEnabled = items.size > 1,
-                        onDragStart = { startDrag(key, index, summary != null) },
+                        onDragStart = { startDrag(key, index) },
                         onDrag = ::updateDragOffset,
                         onDragEnd = ::commitDrag,
                         onItemClick = onItemClick,
