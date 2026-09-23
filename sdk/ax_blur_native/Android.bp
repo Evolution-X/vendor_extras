@@ -1,0 +1,17 @@
+package {
+    default_visibility: ["//visibility:public"],
+}
+
+filegroup {
+    name: "ax_blur_native_sources",
+    srcs: [
+        "src/GlassBlurFilter.cpp",
+    ],
+    visibility: ["//visibility:public"],
+}
+
+cc_library_headers {
+    name: "ax_blur_native_headers",
+    export_include_dirs: ["include"],
+    visibility: ["//visibility:public"],
+}
