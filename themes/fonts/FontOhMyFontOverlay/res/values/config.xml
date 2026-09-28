@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+  <string name="font_oh_my_font" translatable="false">Oh My Font (SF Arabic)</string>
+  <string name="config_bodyFontFamily" translatable="false">omf-sans</string>
+  <string name="config_bodyFontFamilyMedium" translatable="false">omf-sans-medium</string>
+  <string name="config_headlineFontFamily" translatable="false">omf-sans</string>
+  <string name="config_headlineFontFamilyMedium" translatable="false">omf-sans-medium</string>
+  <string name="config_lightFontFamily" translatable="false">omf-sans-light</string>
+  <string name="config_regularFontFamily" translatable="false">omf-sans</string>
+</resources>

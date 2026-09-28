@@ -2117,4 +2117,361 @@
     <family customizationType="new-named-family" name="ZnikomitNo24">
         <font weight="300" style="normal">ZnikomitNo24.ttf</font>
     </family>
+    <!-- Oh My Font: product fonts, opt-in through the font overlay. -->
+    <family-list customizationType="new-named-family" name="omf-sans">
+        <family>
+            <font weight="100" style="normal">OMFSFPro-Regular.ttf<axis tag="wght" stylevalue="110.725" />
+                <axis tag="opsz" stylevalue="20" />
+                <axis tag="wdth" stylevalue="100" />
+                <axis tag="GRAD" stylevalue="400" />
+            </font>
+            <font weight="100" style="italic">OMFSFPro-Italic.ttf<axis tag="wght" stylevalue="110.725" />
+                <axis tag="opsz" stylevalue="21" />
+            </font>
+            <font weight="200" style="normal">OMFSFPro-Regular.ttf<axis tag="wght" stylevalue="200" />
+                <axis tag="opsz" stylevalue="20" />
+                <axis tag="wdth" stylevalue="100" />
+                <axis tag="GRAD" stylevalue="400" />
+            </font>
+            <font weight="200" style="italic">OMFSFPro-Italic.ttf<axis tag="wght" stylevalue="200" />
+                <axis tag="opsz" stylevalue="21" />
+            </font>
+            <font weight="300" style="normal">OMFSFPro-Regular.ttf<axis tag="wght" stylevalue="274.315" />
+                <axis tag="opsz" stylevalue="20" />
+                <axis tag="wdth" stylevalue="100" />
+                <axis tag="GRAD" stylevalue="400" />
+            </font>
+            <font weight="300" style="italic">OMFSFPro-Italic.ttf<axis tag="wght" stylevalue="274.315" />
+                <axis tag="opsz" stylevalue="21" />
+            </font>
+            <font weight="400" style="normal">OMFSFPro-Regular.ttf<axis tag="wght" stylevalue="400" />
+                <axis tag="opsz" stylevalue="20" />
+                <axis tag="wdth" stylevalue="100" />
+                <axis tag="GRAD" stylevalue="400" />
+            </font>
+            <font weight="400" style="italic">OMFSFPro-Italic.ttf<axis tag="wght" stylevalue="400" />
+                <axis tag="opsz" stylevalue="21" />
+            </font>
+            <font weight="500" style="normal">OMFSFPro-Regular.ttf<axis tag="wght" stylevalue="510" />
+                <axis tag="opsz" stylevalue="20" />
+                <axis tag="wdth" stylevalue="100" />
+                <axis tag="GRAD" stylevalue="400" />
+            </font>
+            <font weight="500" style="italic">OMFSFPro-Italic.ttf<axis tag="wght" stylevalue="510" />
+                <axis tag="opsz" stylevalue="21" />
+            </font>
+            <font weight="600" style="normal">OMFSFPro-Regular.ttf<axis tag="wght" stylevalue="600" />
+                <axis tag="opsz" stylevalue="20" />
+                <axis tag="wdth" stylevalue="100" />
+                <axis tag="GRAD" stylevalue="400" />
+            </font>
+            <font weight="600" style="italic">OMFSFPro-Italic.ttf<axis tag="wght" stylevalue="600" />
+                <axis tag="opsz" stylevalue="21" />
+            </font>
+            <font weight="700" style="normal">OMFSFPro-Regular.ttf<axis tag="wght" stylevalue="700" />
+                <axis tag="opsz" stylevalue="20" />
+                <axis tag="wdth" stylevalue="100" />
+                <axis tag="GRAD" stylevalue="400" />
+            </font>
+            <font weight="700" style="italic">OMFSFPro-Italic.ttf<axis tag="wght" stylevalue="700" />
+                <axis tag="opsz" stylevalue="21" />
+            </font>
+            <font weight="800" style="normal">OMFSFPro-Regular.ttf<axis tag="wght" stylevalue="850" />
+                <axis tag="opsz" stylevalue="20" />
+                <axis tag="wdth" stylevalue="100" />
+                <axis tag="GRAD" stylevalue="400" />
+            </font>
+            <font weight="800" style="italic">OMFSFPro-Italic.ttf<axis tag="wght" stylevalue="850" />
+                <axis tag="opsz" stylevalue="21" />
+            </font>
+            <font weight="900" style="normal">OMFSFPro-Regular.ttf<axis tag="wght" stylevalue="1000" />
+                <axis tag="opsz" stylevalue="20" />
+                <axis tag="wdth" stylevalue="100" />
+                <axis tag="GRAD" stylevalue="400" />
+            </font>
+            <font weight="900" style="italic">OMFSFPro-Italic.ttf<axis tag="wght" stylevalue="1000" />
+                <axis tag="opsz" stylevalue="21" />
+            </font>
+        </family>
+        <family>
+            <font weight="100" style="normal">OMFSFArabic.ttf<axis tag="wght" stylevalue="1" />
+                <axis tag="opsz" stylevalue="20" />
+            </font>
+            <font weight="200" style="normal">OMFSFArabic.ttf<axis tag="wght" stylevalue="101" />
+                <axis tag="opsz" stylevalue="20" />
+            </font>
+            <font weight="300" style="normal">OMFSFArabic.ttf<axis tag="wght" stylevalue="267" />
+                <axis tag="opsz" stylevalue="20" />
+            </font>
+            <font weight="400" style="normal">OMFSFArabic.ttf<axis tag="wght" stylevalue="400" />
+                <axis tag="opsz" stylevalue="20" />
+            </font>
+            <font weight="500" style="normal">OMFSFArabic.ttf<axis tag="wght" stylevalue="511" />
+                <axis tag="opsz" stylevalue="20" />
+            </font>
+            <font weight="600" style="normal">OMFSFArabic.ttf<axis tag="wght" stylevalue="622" />
+                <axis tag="opsz" stylevalue="20" />
+            </font>
+            <font weight="700" style="normal">OMFSFArabic.ttf<axis tag="wght" stylevalue="711" />
+                <axis tag="opsz" stylevalue="20" />
+            </font>
+            <font weight="800" style="normal">OMFSFArabic.ttf<axis tag="wght" stylevalue="844" />
+                <axis tag="opsz" stylevalue="20" />
+            </font>
+            <font weight="900" style="normal">OMFSFArabic.ttf<axis tag="wght" stylevalue="1000" />
+                <axis tag="opsz" stylevalue="20" />
+            </font>
+        </family>
+    </family-list>
+
+    <family-list customizationType="new-named-family" name="omf-sans-condensed">
+        <family>
+            <font weight="100" style="normal">OMFSFPro-Regular.ttf<axis tag="wght" stylevalue="110.725" />
+                <axis tag="opsz" stylevalue="20" />
+                <axis tag="wdth" stylevalue="80" />
+                <axis tag="GRAD" stylevalue="400" />
+            </font>
+            <font weight="100" style="italic">OMFSFPro-Italic.ttf<axis tag="wght" stylevalue="110.725" />
+                <axis tag="opsz" stylevalue="21" />
+            </font>
+            <font weight="200" style="normal">OMFSFPro-Regular.ttf<axis tag="wght" stylevalue="200" />
+                <axis tag="opsz" stylevalue="20" />
+                <axis tag="wdth" stylevalue="80" />
+                <axis tag="GRAD" stylevalue="400" />
+            </font>
+            <font weight="200" style="italic">OMFSFPro-Italic.ttf<axis tag="wght" stylevalue="200" />
+                <axis tag="opsz" stylevalue="21" />
+            </font>
+            <font weight="300" style="normal">OMFSFPro-Regular.ttf<axis tag="wght" stylevalue="274.315" />
+                <axis tag="opsz" stylevalue="20" />
+                <axis tag="wdth" stylevalue="80" />
+                <axis tag="GRAD" stylevalue="400" />
+            </font>
+            <font weight="300" style="italic">OMFSFPro-Italic.ttf<axis tag="wght" stylevalue="274.315" />
+                <axis tag="opsz" stylevalue="21" />
+            </font>
+            <font weight="400" style="normal">OMFSFPro-Regular.ttf<axis tag="wght" stylevalue="400" />
+                <axis tag="opsz" stylevalue="20" />
+                <axis tag="wdth" stylevalue="80" />
+                <axis tag="GRAD" stylevalue="400" />
+            </font>
+            <font weight="400" style="italic">OMFSFPro-Italic.ttf<axis tag="wght" stylevalue="400" />
+                <axis tag="opsz" stylevalue="21" />
+            </font>
+            <font weight="500" style="normal">OMFSFPro-Regular.ttf<axis tag="wght" stylevalue="510" />
+                <axis tag="opsz" stylevalue="20" />
+                <axis tag="wdth" stylevalue="80" />
+                <axis tag="GRAD" stylevalue="400" />
+            </font>
+            <font weight="500" style="italic">OMFSFPro-Italic.ttf<axis tag="wght" stylevalue="510" />
+                <axis tag="opsz" stylevalue="21" />
+            </font>
+            <font weight="600" style="normal">OMFSFPro-Regular.ttf<axis tag="wght" stylevalue="600" />
+                <axis tag="opsz" stylevalue="20" />
+                <axis tag="wdth" stylevalue="80" />
+                <axis tag="GRAD" stylevalue="400" />
+            </font>
+            <font weight="600" style="italic">OMFSFPro-Italic.ttf<axis tag="wght" stylevalue="600" />
+                <axis tag="opsz" stylevalue="21" />
+            </font>
+            <font weight="700" style="normal">OMFSFPro-Regular.ttf<axis tag="wght" stylevalue="700" />
+                <axis tag="opsz" stylevalue="20" />
+                <axis tag="wdth" stylevalue="80" />
+                <axis tag="GRAD" stylevalue="400" />
+            </font>
+            <font weight="700" style="italic">OMFSFPro-Italic.ttf<axis tag="wght" stylevalue="700" />
+                <axis tag="opsz" stylevalue="21" />
+            </font>
+            <font weight="800" style="normal">OMFSFPro-Regular.ttf<axis tag="wght" stylevalue="850" />
+                <axis tag="opsz" stylevalue="20" />
+                <axis tag="wdth" stylevalue="80" />
+                <axis tag="GRAD" stylevalue="400" />
+            </font>
+            <font weight="800" style="italic">OMFSFPro-Italic.ttf<axis tag="wght" stylevalue="850" />
+                <axis tag="opsz" stylevalue="21" />
+            </font>
+            <font weight="900" style="normal">OMFSFPro-Regular.ttf<axis tag="wght" stylevalue="1000" />
+                <axis tag="opsz" stylevalue="20" />
+                <axis tag="wdth" stylevalue="80" />
+                <axis tag="GRAD" stylevalue="400" />
+            </font>
+            <font weight="900" style="italic">OMFSFPro-Italic.ttf<axis tag="wght" stylevalue="1000" />
+                <axis tag="opsz" stylevalue="21" />
+            </font>
+        </family>
+        <family>
+            <font weight="100" style="normal">OMFSFArabic.ttf<axis tag="wght" stylevalue="1" />
+                <axis tag="opsz" stylevalue="20" />
+            </font>
+            <font weight="200" style="normal">OMFSFArabic.ttf<axis tag="wght" stylevalue="101" />
+                <axis tag="opsz" stylevalue="20" />
+            </font>
+            <font weight="300" style="normal">OMFSFArabic.ttf<axis tag="wght" stylevalue="267" />
+                <axis tag="opsz" stylevalue="20" />
+            </font>
+            <font weight="400" style="normal">OMFSFArabic.ttf<axis tag="wght" stylevalue="400" />
+                <axis tag="opsz" stylevalue="20" />
+            </font>
+            <font weight="500" style="normal">OMFSFArabic.ttf<axis tag="wght" stylevalue="511" />
+                <axis tag="opsz" stylevalue="20" />
+            </font>
+            <font weight="600" style="normal">OMFSFArabic.ttf<axis tag="wght" stylevalue="622" />
+                <axis tag="opsz" stylevalue="20" />
+            </font>
+            <font weight="700" style="normal">OMFSFArabic.ttf<axis tag="wght" stylevalue="711" />
+                <axis tag="opsz" stylevalue="20" />
+            </font>
+            <font weight="800" style="normal">OMFSFArabic.ttf<axis tag="wght" stylevalue="844" />
+                <axis tag="opsz" stylevalue="20" />
+            </font>
+            <font weight="900" style="normal">OMFSFArabic.ttf<axis tag="wght" stylevalue="1000" />
+                <axis tag="opsz" stylevalue="20" />
+            </font>
+        </family>
+    </family-list>
+
+    <!--
+        OMF SF Arabic extension parity for styled app/system text.
+        Latin-only bold/italic fonts fall back through sans-serif for Arabic,
+        so prepend SF Arabic there and retain stock Arabic behind it.
+    -->
+    <family customizationType="new-locale-family" operation="prepend" lang="und-Arab" variant="elegant">
+        <font weight="100" style="normal" fallbackFor="sans-serif">OMFSFArabic.ttf<axis tag="opsz" stylevalue="20" />
+            <axis tag="wght" stylevalue="1" />
+        </font>
+        <font weight="200" style="normal" fallbackFor="sans-serif">OMFSFArabic.ttf<axis tag="opsz" stylevalue="20" />
+            <axis tag="wght" stylevalue="101" />
+        </font>
+        <font weight="300" style="normal" fallbackFor="sans-serif">OMFSFArabic.ttf<axis tag="opsz" stylevalue="20" />
+            <axis tag="wght" stylevalue="267" />
+        </font>
+        <font weight="400" style="normal" fallbackFor="sans-serif">OMFSFArabic.ttf<axis tag="opsz" stylevalue="20" />
+            <axis tag="wght" stylevalue="400" />
+        </font>
+        <font weight="500" style="normal" fallbackFor="sans-serif">OMFSFArabic.ttf<axis tag="opsz" stylevalue="20" />
+            <axis tag="wght" stylevalue="511" />
+        </font>
+        <font weight="600" style="normal" fallbackFor="sans-serif">OMFSFArabic.ttf<axis tag="opsz" stylevalue="20" />
+            <axis tag="wght" stylevalue="622" />
+        </font>
+        <font weight="700" style="normal" fallbackFor="sans-serif">OMFSFArabic.ttf<axis tag="opsz" stylevalue="20" />
+            <axis tag="wght" stylevalue="711" />
+        </font>
+        <font weight="800" style="normal" fallbackFor="sans-serif">OMFSFArabic.ttf<axis tag="opsz" stylevalue="20" />
+            <axis tag="wght" stylevalue="844" />
+        </font>
+        <font weight="900" style="normal" fallbackFor="sans-serif">OMFSFArabic.ttf<axis tag="opsz" stylevalue="20" />
+            <axis tag="wght" stylevalue="1000" />
+        </font>
+    </family>
+    <family customizationType="new-locale-family" operation="prepend" lang="und-Arab" variant="compact">
+        <font weight="100" style="normal" fallbackFor="sans-serif">OMFSFArabic.ttf<axis tag="opsz" stylevalue="20" />
+            <axis tag="wght" stylevalue="1" />
+        </font>
+        <font weight="200" style="normal" fallbackFor="sans-serif">OMFSFArabic.ttf<axis tag="opsz" stylevalue="20" />
+            <axis tag="wght" stylevalue="101" />
+        </font>
+        <font weight="300" style="normal" fallbackFor="sans-serif">OMFSFArabic.ttf<axis tag="opsz" stylevalue="20" />
+            <axis tag="wght" stylevalue="267" />
+        </font>
+        <font weight="400" style="normal" fallbackFor="sans-serif">OMFSFArabic.ttf<axis tag="opsz" stylevalue="20" />
+            <axis tag="wght" stylevalue="400" />
+        </font>
+        <font weight="500" style="normal" fallbackFor="sans-serif">OMFSFArabic.ttf<axis tag="opsz" stylevalue="20" />
+            <axis tag="wght" stylevalue="511" />
+        </font>
+        <font weight="600" style="normal" fallbackFor="sans-serif">OMFSFArabic.ttf<axis tag="opsz" stylevalue="20" />
+            <axis tag="wght" stylevalue="622" />
+        </font>
+        <font weight="700" style="normal" fallbackFor="sans-serif">OMFSFArabic.ttf<axis tag="opsz" stylevalue="20" />
+            <axis tag="wght" stylevalue="711" />
+        </font>
+        <font weight="800" style="normal" fallbackFor="sans-serif">OMFSFArabic.ttf<axis tag="opsz" stylevalue="20" />
+            <axis tag="wght" stylevalue="844" />
+        </font>
+        <font weight="900" style="normal" fallbackFor="sans-serif">OMFSFArabic.ttf<axis tag="opsz" stylevalue="20" />
+            <axis tag="wght" stylevalue="1000" />
+        </font>
+    </family>
+
+    <family customizationType="new-named-family" name="omf-serif">
+        <font weight="400" style="normal">OMFNewYork-Regular.ttf<axis tag="wght" stylevalue="400" />
+            <axis tag="opsz" stylevalue="20" />
+        </font>
+        <font weight="400" style="italic">OMFNewYork-Italic.ttf<axis tag="wght" stylevalue="400" />
+            <axis tag="opsz" stylevalue="20" />
+        </font>
+        <font weight="500" style="normal">OMFNewYork-Regular.ttf<axis tag="wght" stylevalue="496" />
+            <axis tag="opsz" stylevalue="20" />
+        </font>
+        <font weight="500" style="italic">OMFNewYork-Italic.ttf<axis tag="wght" stylevalue="496" />
+            <axis tag="opsz" stylevalue="20" />
+        </font>
+        <font weight="600" style="normal">OMFNewYork-Regular.ttf<axis tag="wght" stylevalue="568" />
+            <axis tag="opsz" stylevalue="28" />
+        </font>
+        <font weight="600" style="italic">OMFNewYork-Italic.ttf<axis tag="wght" stylevalue="568" />
+            <axis tag="opsz" stylevalue="28" />
+        </font>
+        <font weight="700" style="normal">OMFNewYork-Regular.ttf<axis tag="wght" stylevalue="674" />
+            <axis tag="opsz" stylevalue="36" />
+        </font>
+        <font weight="700" style="italic">OMFNewYork-Italic.ttf<axis tag="wght" stylevalue="674" />
+            <axis tag="opsz" stylevalue="36" />
+        </font>
+        <font weight="800" style="normal">OMFNewYork-Regular.ttf<axis tag="wght" stylevalue="810" />
+            <axis tag="opsz" stylevalue="44" />
+        </font>
+        <font weight="800" style="italic">OMFNewYork-Italic.ttf<axis tag="wght" stylevalue="810" />
+            <axis tag="opsz" stylevalue="44" />
+        </font>
+        <font weight="900" style="normal">OMFNewYork-Regular.ttf<axis tag="wght" stylevalue="934" />
+            <axis tag="opsz" stylevalue="52" />
+        </font>
+        <font weight="900" style="italic">OMFNewYork-Italic.ttf<axis tag="wght" stylevalue="934" />
+            <axis tag="opsz" stylevalue="52" />
+        </font>
+    </family>
+
+    <family customizationType="new-named-family" name="omf-monospace">
+        <font weight="400" style="normal">OMFSFMono-Regular.ttf<axis tag="wght" stylevalue="400" />
+            <axis tag="YAXS" stylevalue="324" />
+        </font>
+        <font weight="400" style="italic">OMFSFMono-Italic.ttf<axis tag="wght" stylevalue="400" />
+            <axis tag="YAXS" stylevalue="324" />
+        </font>
+        <font weight="500" style="normal">OMFSFMono-Regular.ttf<axis tag="wght" stylevalue="484" />
+            <axis tag="YAXS" stylevalue="321" />
+        </font>
+        <font weight="500" style="italic">OMFSFMono-Italic.ttf<axis tag="wght" stylevalue="484" />
+            <axis tag="YAXS" stylevalue="321" />
+        </font>
+        <font weight="600" style="normal">OMFSFMono-Regular.ttf<axis tag="wght" stylevalue="571" />
+            <axis tag="YAXS" stylevalue="325" />
+        </font>
+        <font weight="600" style="italic">OMFSFMono-Italic.ttf<axis tag="wght" stylevalue="571" />
+            <axis tag="YAXS" stylevalue="325" />
+        </font>
+        <font weight="700" style="normal">OMFSFMono-Regular.ttf<axis tag="wght" stylevalue="683" />
+            <axis tag="YAXS" stylevalue="336" />
+        </font>
+        <font weight="700" style="italic">OMFSFMono-Italic.ttf<axis tag="wght" stylevalue="683" />
+            <axis tag="YAXS" stylevalue="336" />
+        </font>
+        <font weight="800" style="normal">OMFSFMono-Regular.ttf<axis tag="wght" stylevalue="900" />
+            <axis tag="YAXS" stylevalue="295" />
+        </font>
+        <font weight="800" style="italic">OMFSFMono-Italic.ttf<axis tag="wght" stylevalue="900" />
+            <axis tag="YAXS" stylevalue="295" />
+        </font>
+    </family>
+
+    <alias name="omf-sans-light" to="omf-sans" weight="300" />
+
+    <alias name="omf-sans-medium" to="omf-sans" weight="500" />
+
+    <alias name="omf-sans-semibold" to="omf-sans" weight="600" />
+
+    <alias name="omf-sans-bold" to="omf-sans" weight="700" />
+
 </fonts-modification>
