@@ -1,0 +1,9 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.theme.font.ohmyfont" android:versionCode="1" android:versionName="1.0">
+    <overlay android:targetPackage="android"
+        android:category="android.theme.customization.font" android:priority="1"/>
+    <application android:label="@string/font_oh_my_font" android:hasCode="false">
+        <meta-data android:name="android.theme.customization.REQUIRED_SYSTEM_FONTS"
+            android:value="omf-sans,omf-sans-medium,omf-sans-bold"/>
+    </application>
+</manifest>
