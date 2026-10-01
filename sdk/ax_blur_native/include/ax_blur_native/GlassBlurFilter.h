@@ -23,6 +23,7 @@
 #include <SkSurface.h>
 
 #include <array>
+#include <chrono>
 #include <cstddef>
 #include <cstdint>
 
@@ -59,7 +60,7 @@ private:
     static constexpr float kRadiusToScaledRadius = kDefaultScale * kRadiusToSigma;
 
     static constexpr int kMaxSurfaces = 4;
-    static constexpr size_t kPoolCapacity = 3;
+    static constexpr size_t kPoolCapacity = 16;
     static constexpr size_t kMaxCachedRadius = 256;
 
     struct SurfaceSlot {
@@ -72,12 +73,15 @@ private:
     mutable std::array<std::array<SurfaceSlot, kPoolCapacity>, kMaxSurfaces> mPools;
     mutable std::array<size_t, kMaxSurfaces> mCounts = {};
     mutable uint64_t mFrameCounter = 0;
+    mutable std::chrono::steady_clock::time_point mLastCallTime = {};
+    mutable size_t mLayerInFrameIndex = 0;
 
     std::array<sk_sp<const SkData>, kMaxCachedRadius + 1> mPrecomputedUniformsAxis;
     std::array<sk_sp<const SkData>, kMaxCachedRadius + 1> mPrecomputedUniformsDiag;
+    std::array<sk_sp<const SkData>, kMaxCachedRadius + 1> mPrecomputedFinalUniforms;
 
     sk_sp<SkSurface> obtainSurface(SkiaGpuContext* context, const SkImageInfo& info,
-                                   int index) const;
+                                   int index, size_t slotOffset) const;
 
     void blurInto(const sk_sp<SkSurface>& drawSurface, sk_sp<SkShader> input,
                   const sk_sp<const SkData>& uniforms, const float alpha,
