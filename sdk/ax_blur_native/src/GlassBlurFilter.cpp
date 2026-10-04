@@ -236,7 +236,7 @@ sk_sp<SkImage> GlassBlurFilter::generate(SkiaGpuContext* context, const uint32_t
             std::chrono::duration_cast<std::chrono::microseconds>(now - mLastCallTime).count();
     mLastCallTime = now;
 
-    if (elapsedUs > 3000) {
+    if (elapsedUs > kInterFrameThresholdUs) {
         ++mFrameCounter;
         mLayerInFrameIndex = 0;
     } else {

@@ -62,6 +62,7 @@ private:
     static constexpr int kMaxSurfaces = 4;
     static constexpr size_t kPoolCapacity = 16;
     static constexpr size_t kMaxCachedRadius = 256;
+    static constexpr int64_t kInterFrameThresholdUs = 6000;
 
     struct SurfaceSlot {
         SkImageInfo info;
