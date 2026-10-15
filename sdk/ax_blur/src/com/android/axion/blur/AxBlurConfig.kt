@@ -26,7 +26,7 @@ import kotlin.jvm.JvmStatic
 import kotlin.math.roundToInt
 
 object AxBlurConfig {
-    const val BASE_MAX_BLUR_RADIUS_PX = 175f
+    const val BASE_MAX_BLUR_RADIUS_PX = 120f
     const val BASE_SCALE_DP = 420f
     const val BASE_WIDTH_PX = 1080f
 
