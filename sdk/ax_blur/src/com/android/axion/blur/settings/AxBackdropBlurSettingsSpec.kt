@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.android.axion.blur.model
+package com.android.axion.blur.settings
 
 import com.android.axion.blur.AxBlurConfig
 import kotlin.jvm.JvmOverloads
@@ -25,6 +25,7 @@ data class AxBackdropBlurSettingsSpec internal constructor(
     internal val defaultEnabled: Boolean,
     internal val defaultRadiusPx: Float?,
     internal val maxRadiusPx: Float?,
+    internal val radiusInPercent: Boolean,
 ) {
     companion object {
         private const val KEY_SYSTEM_BLUR_RADIUS_PCT = AxBlurConfig.KEY_SYSTEM_BLUR_RADIUS_PCT
@@ -37,6 +38,7 @@ data class AxBackdropBlurSettingsSpec internal constructor(
             defaultEnabled = true,
             defaultRadiusPx = null,
             maxRadiusPx = null,
+            radiusInPercent = true,
         )
 
         @JvmStatic
@@ -50,12 +52,13 @@ data class AxBackdropBlurSettingsSpec internal constructor(
             defaultRadiusPx: Float = MAX_LAUNCHER_BLUR_RADIUS_PX,
             maxRadiusPx: Float = MAX_LAUNCHER_BLUR_RADIUS_PX,
         ): AxBackdropBlurSettingsSpec {
-            return secure(
+            return AxBackdropBlurSettingsSpec(
                 enabledKey = KEY_LAUNCHER_BLUR_ENABLED,
                 radiusKey = KEY_LAUNCHER_BLUR_RADIUS_PCT,
-                defaultEnabled = false,
+                defaultEnabled = true,
                 defaultRadiusPx = defaultRadiusPx,
                 maxRadiusPx = maxRadiusPx,
+                radiusInPercent = true,
             )
         }
 
@@ -73,6 +76,7 @@ data class AxBackdropBlurSettingsSpec internal constructor(
                 defaultEnabled = defaultEnabled,
                 defaultRadiusPx = defaultRadiusPx,
                 maxRadiusPx = maxRadiusPx,
+                radiusInPercent = false,
             )
         }
     }

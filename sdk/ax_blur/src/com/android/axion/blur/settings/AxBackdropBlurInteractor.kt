@@ -13,15 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.android.axion.blur.domain.interactor
+package com.android.axion.blur.settings
 
 import android.content.Context
 import android.os.Handler
 import android.os.Looper
-import com.android.axion.blur.data.repository.AxBackdropBlurSettingsRepository
-import com.android.axion.blur.model.AxBackdropBlurSettingsModel
-import com.android.axion.blur.model.AxBackdropBlurSettingsSpec
-import com.android.axion.blur.model.AxBackdropBlurSettingsSubscription
 
 internal class AxBackdropBlurInteractor(
     context: Context,
@@ -41,7 +37,20 @@ internal class AxBackdropBlurInteractor(
                 blurRadiusPx = 0f,
             )
         }
-        val radius = repository.secureFloat(spec.radiusKey, defaultRadius)
+        val defaultStoredRadius = if (spec.radiusInPercent) {
+            defaultRadius * FULL_BLUR_PERCENT / maxRadius
+        } else {
+            defaultRadius
+        }
+        val storedRadius = repository.secureFloat(
+            spec.radiusKey,
+            defaultStoredRadius,
+        )
+        val radius = if (spec.radiusInPercent) {
+            maxRadius * storedRadius / FULL_BLUR_PERCENT
+        } else {
+            storedRadius
+        }
         return AxBackdropBlurSettingsModel(
             enabled = true,
             blurRadiusPx = radius.sanitize(maxRadius),
@@ -65,6 +74,8 @@ internal class AxBackdropBlurInteractor(
     }
 
     companion object {
+        private const val FULL_BLUR_PERCENT = 100f
+
         fun maxBlurRadiusPx(context: Context): Float {
             return AxBackdropBlurSettingsRepository.maxBlurRadiusPx(context)
         }
