@@ -39,6 +39,7 @@ PRODUCT_PACKAGES += \
     ClockFontAlphaWoodOverlay \
     ClockFontAmaranteOverlay \
     ClockFontAmpad3D2Overlay \
+    ClockFontAtkinsonHyperlegibleOverlay \
     ClockFontBariolOverlay \
     ClockFontBetsyFlanaganOverlay \
     ClockFontBigCheeseOverlay \
@@ -101,6 +102,7 @@ PRODUCT_PACKAGES += \
     ClockFontRemponkOverlay \
     ClockFontRobotoCondensedOverlay \
     ClockFontRomantiquesOverlay \
+    ClockFontRosemaryOverlay \
     ClockFontRoundheadsOverlay \
     ClockFontRubikOverlay \
     ClockFontSamsungOneOverlay \
@@ -124,6 +126,7 @@ PRODUCT_PACKAGES += \
     FontAccuratistOverlay \
     FontAclonicaOverlay \
     FontAmaranteOverlay \
+    FontAtkinsonHyperlegibleOverlay \
     FontBariolOverlay \
     FontCagliostroOverlay \
     FontCoconOverlay \
@@ -133,6 +136,8 @@ PRODUCT_PACKAGES += \
     FontCooljazzOverlay \
     FontCoolstoryOverlay \
     FontExotwoOverlay \
+    FontDeterminationMonoOverlay \
+    FontDeterminationSansOverlay \
     FontEvoSansOverlay \
     FontEvolveSansOverlay \
     FontFifa2018Overlay \
@@ -143,6 +148,7 @@ PRODUCT_PACKAGES += \
     FontIBMPlexSansOverlay \
     FontLatoOverlay \
     FontLinotteOverlay \
+    FontMercyOverlay \
     FontNokiaPureOverlay \
     FontNothingDotHeadlineOverlay \
     FontNothingDotOverlay \
@@ -151,7 +157,9 @@ PRODUCT_PACKAGES += \
     FontOneplusSansOverlay \
     FontOneplusSlateOverlay \
     FontPoppinsSourceOverlay \
+    FontOpenDyslexicOverlay \
     FontOswaldOverlay \
+    FontPapyrusOverlay \
     FontPlayOverlay \
     FontQuandoOverlay \
     FontRecursiveCasualOverlay \
@@ -160,6 +168,7 @@ PRODUCT_PACKAGES += \
     FontReemKufiOverlay \
     FontRobotoCondensedOverlay \
     FontRookeryOverlay \
+    FontRosemaryOverlay \
     FontRubikOverlay \
     FontSamsungOneOverlay \
     FontOhMyFontOverlay \
