@@ -172,7 +172,6 @@ PRODUCT_PACKAGES += \
     FontOhMyFontOverlay \
     FontSanFranciscoDisplayProSourceOverlay \
     FontSansSerifOverlay \
-    FontSansSerifProOverlay \
     FontSonySketchOverlay \
     FontSpaceGroteskOverlay \
     FontStoropiaOverlay \
