@@ -148,7 +148,6 @@ PRODUCT_PACKAGES += \
     FontLinotteOverlay \
     FontMercyOverlay \
     FontNokiaPureOverlay \
-    FontNothingDotHeadlineOverlay \
     FontNothingDotOverlay \
     FontNunitoOverlay \
     FontOneUISansOverlay \
