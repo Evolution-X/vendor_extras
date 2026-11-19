@@ -19,7 +19,6 @@ PRODUCT_PACKAGES += \
 endif
 
 PRODUCT_PACKAGES += \
-    HideSmartSpace \
     ImeNavBarSpaceOverlay \
     SmartSpaceOffset
 
